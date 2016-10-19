@@ -1,0 +1,61 @@
+.main{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #D2B48C;
+}
+
+.logo{
+	text-align: center;
+	height: 117px;
+	background-color: #D2B48C;
+	/*margin-right: 10px;*/
+
+}
+
+.inline{
+	display: inline;
+	margin-top: 10px;
+	background-color:#F5DEB3; 
+	top:125px;
+	width: 98.5%;
+	height: 
+
+}
+
+.left{
+	height:400px;
+	width:150px;
+	background-color:#F5DEB3;
+	color:#8B4513;
+	position: fixed;
+	float:left;
+	top: 125px;
+	padding: 10px;
+}
+
+
+.right{
+	height:400px;
+	background: url(image/heroroad.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 179px 125px;
+	background-size: 1038px 420px;
+	color:#ffffff;
+	overflow: auto;
+	position: fixed;
+	top: 125px;
+	left: 179px;
+	padding: 10px;
+	}
+
+.footer{
+	height: 50px;
+	width: 98.5%;
+	bottom: 10px;
+	top: 550px;
+	background-color: #D2B48C;
+	text-align: center;
+	position: fixed;
+}

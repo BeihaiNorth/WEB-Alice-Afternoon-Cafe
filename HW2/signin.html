@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>HOME|Alice&rsquo;s Afternoon</title>
+	<title>Sign In|Alice&rsquo;s Afternoon</title>
 	<link rel="stylesheet" type="text/css" href="layout.css">
 	<style>
 		div.mainMenu ul {
@@ -49,17 +49,58 @@
 			background-color:#455A64;
 		}
 	</style>
+		<script type="text/javascript">
+		function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value=="")
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_required(firstname,"Firstname must be filled out!")==false)
+    {firstname.focus();return false}
+  
+  if (validate_required(lastname,"lastname must be filled out!")==false)
+    {lastname.focus();return false}
+  
+  if (validate_required(addressline1,"Address line 1 must be filled out!")==false)
+    {addressline1.focus();return false}
+  
+
+  if (validate_required(email,"Email must be filled out!")==false)
+    {email.focus();return false}
+  
+
+  if (validate_required(phone,"Phone must be filled out!")==false)
+    {phone.focus();return false}
+  
+  if (validate_required(comment,"Comment must be filled out!")==false)
+    {comment.focus();return false}
+  }
+  
+
+}
+
+	</script>
 </head>
+
 
 <body style="background-color:#FFCDD2 ">
 
 <div class="head">
+
 <div class="logo">
 	<a href="home.html">
 		<img src="images/title.jpg" alt="Error" width="180">
 	</a>
 </div>
-
 
 <div class="mainMenu">
 	<ul>
@@ -83,50 +124,22 @@
 <div class="intro">
 	<p>
 		<h2>Afternoon at Alice's Wonderland</h1>
-	
-	Here at Alice's Wonderland, we ensure you a pleasant piece of time!
-	<br/>Come and discover your own lovely afternoon with our magic!
 	</p>
 </div>
 
+<div class="form">
+	<form action="submitpage.html" onsubmit="return validate_form(this)" method="post" >
+		First name:<br><input type="text" name="firstname" size="30"><br>
+		Last name:<br><input type="text" name="lastname" size="30"><br>
+		Address Line 1:<br><input type="text" name="addressline1" size="80"><br>
+		Address Line 2:<br><input type="text" name="addressline2" size="80"><br>
+		E-mail:<br><input type="text" name="email" size="30"><br>
+		Phone:<br><input type="text" name="phone" size="30"><br>
+		<input type="submit" value="Sign In"> 
 
-
-  <!-- new and in -->
-<div class="inline0">
-	<div class="left">
-		<h2 align="center">NEW on menu</h2>
-		<h3>
-			Autumn is chilling, but we are warm. 
-			<br/>--Try our new Orange Sweet collection in store.
-		</h3>
-		<p>
-		<img src="images/orangecoffee.jpg" alt="Error with image" width="350">
-		<br/>Try our new <b>Orange Sweet Cappuccino</b> in store.
-		<br/>
-		<br/>
-		</p>
-	</div>
-
-
-	<div class="right">
-		<h2 align="center">Special Events Every Week</h2>
-		<p>
-			Different events every week, including book reading, indie film release, new idea discussion......
-			<br/>Usually on weekends afternoon. Mostly free.(wink).
-			<br/>Go to the&nbsp;
-					<a href="events.html">EVENTS</a>
-			&nbsp;page for details.
-		</p>
-		<p>
-			<b>Also</b>, if you have any idea of a meaningful event, just contact us and explain it to us. 
-			<br/>Just remember every thing could happen in Alice's Wonderland.
-			<br/>Go to the&nbsp;
-			<a href="cooperation.html">COOPERATION</a>
-			&nbsp;page for details.
-			<br/>
-		</p>
-	</div>
+	</form>
 </div>
+
 
 
 <div class="footer">
@@ -136,7 +149,6 @@
   <br/>Contact information: <a href="mailto:alicecoffee@gmail.com">alicecoffee@gmail.com</a>.</p>
 </footer>
 </div>
-
-
+s
 </body>
 </html>
