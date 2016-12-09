@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HOME|Alice&rsquo;s Afternoon</title>
+		<link rel="stylesheet" type="text/css" href="layout.css">
+	<style>
+		/*main menu css*/
+		div.mainMenu > ul {
+			list-style-type: none;
+			margin-top: 40px;
+			margin-left: 10px;
+		}
+
+		div.mainMenu>ul li {
+			float: left;
+			height: 10px;
+			margin-top:20px;
+			margin-right: 25px;
+			padding: 3px;
+		}
+		div.mainMenu>ul li a {
+			text-decoration: none;
+			display: block;
+			color: white;
+		}
+		div.mainMenu>ul li a:hover {
+			background-color:#455A64;
+		}
+
+		/*sub menu css*/
+		div.mainMenu ul li ul {
+			position: absolute;
+			top:80px;
+			display: none;
+			text-align: left;
+			font-size: 12px;
+			background-color: #B22222;
+			padding-left: 5px;
+		}
+		div.mainMenu ul li ul li{
+			padding-left: 0px;
+			margin-right: 10px;
+			margin-left: 0px;
+			margin-top: 1px;
+			margin-bottom: 3px;
+	        display: block; 
+		}
+
+		div.mainMenu ul li:hover ul {
+			display: block; 
+		}
+		
+		/*signin and fb css*/
+		div.signIn ul {
+			list-style-type: none;
+			margin-top: 0px;
+			margin-left: 10px;
+			margin-right: 90px;
+			border-bottom: white;
+		}
+		div.signIn ul li {
+			float: right;
+			height: 10px;
+			margin-top:20px;
+			margin-right: 25px;
+			padding: 0px;
+		}
+		div.signIn ul li a {
+			text-decoration: none;
+			display: block;
+			color: white;
+			font-size: 12px;
+		}
+		div.signIn ul li a:hover {
+			background-color:#455A64;
+		}
+
+
+
+
+		@media only screen and (max-width: 668px) {
+	body {margin:0px;}
+	div.logo img {display: none;}
+	div.mainMenu{
+		left:0px;
+		font-size: 15px;
+		width: auto;
+		height: 50px;
+	}
+	div.mainMenu > ul{
+		margin:5px;
+		float: none;
+		list-style-type: none;
+	}
+
+	div.signIn{
+		display: none;
+	}
+
+	div.inline0{
+		display: block;
+		padding: 10px;
+	}
+	div.left{
+		height:400px;
+		float:none;
+	}
+	div.left img{
+
+		width: 300px;
+	}
+
+	div.right{
+		height:300px;
+		margin-right: 8px;
+		margin-top: 10px;
+	}
+}
+	</style>
+</head>
+
+<body style="background-color:#FFCDD2 ">
+
+<div class="head">
+<div class="logo">
+	<a href="home.html">
+		<img src="images/title.jpg" alt="Error" width="180">
+	</a>
+</div>
+
+
+<div class="mainMenu">
+	<ul>
+		<li><a href="home.html">&spades;HOME</a></li>
+		<li><a href="taste.html">&spades;TASTE</a>
+			<ul>
+				<li><a href="coffee.html">COFFEE</a></li>
+				<li><a href="tea.html">TEA</a></li>
+				<li><a href="dessert.html">DESSERT</a></li>
+			</ul>
+		</li>
+		<li><a href="events.html">&spades;EVENTS</a></li>
+		<li><a href="cooperation.html">&spades;COOPERATION</a></li>
+		<li><a href="community.html">&spades;COMMUNITY</a></li>
+	</ul>
+</div>
+
+<div class="signIn">
+	<ul>
+		<li><a href="signin.html">Sign In</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+	</ul>
+</div>
+
+</div>
+
+<div class="intro">
+	<p>
+		<h2>Afternoon at Alice's Wonderland</h1>
+	
+	Here at Alice's Wonderland, we ensure you a pleasant piece of time!
+	<br/>Come and discover your own lovely afternoon with our magic!
+	</p>
+</div>
+
+
+
+  <!-- new and in -->
+<div class="inline0">
+	<div class="left">
+		<h2 align="center">NEW on menu</h2>
+		<h3>
+			Autumn is chilling, but we are warm. 
+			<br/>--Try our new Orange Sweet collection in store.
+		</h3>
+		<p>
+		<img src="images/orangecoffee.jpg" alt="Error with image" width="350">
+		<br/>Try our new <b>Orange Sweet Cappuccino</b> in store.
+		<br/>
+		<br/>
+		</p>
+	</div>
+
+
+	<div class="right">
+		<h2 align="center">Special Events Every Week</h2>
+		<p>
+			Different events every week, including book reading, indie film release, new idea discussion......
+			<br/>Usually on weekends afternoon. Mostly free.(wink).
+			<br/>Go to the&nbsp;
+					<a href="events.html">EVENTS</a>
+			&nbsp;page for details.
+		</p>
+		<p>
+			<b>Also</b>, if you have any idea of a meaningful event, just contact us and explain it to us. 
+			<br/>Just remember every thing could happen in Alice's Wonderland.
+			<br/>Go to the&nbsp;
+			<a href="cooperation.html">COOPERATION</a>
+			&nbsp;page for details.
+			<br/>
+		</p>
+	</div>
+</div>
+
+
+<div class="footer">
+<footer style="color:grey">
+  <p>&copy;2016 Alice's Coffee
+  <a href="terms.html">Terms and Conditions</a>
+  <br/>Contact information: <a href="mailto:alicecoffee@gmail.com">alicecoffee@gmail.com</a>.</p>
+</footer>
+</div>
+
+
+</body>
+</html>

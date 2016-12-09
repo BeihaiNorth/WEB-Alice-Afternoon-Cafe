@@ -1,0 +1,120 @@
+
+
+.head{
+	position: relative;
+	height: 101px;
+	background-color: #800000;
+}
+
+		.logo{
+			position: absolute;
+			height: 100px
+			width:270px;
+			top: 0%;
+			left: 0%;
+		}
+
+		.mainMenu{
+			position:absolute;
+			top:0px;
+			/*right: 0%;*/
+			left:180px;
+			height:101px;
+			width: 620px;
+			font-size: 15px;
+			background-color: #800000;
+
+			list-style-type: none;
+
+
+		}
+
+		.signIn{
+			position: absolute;
+			top:0px;
+			height: 30px;
+			right:0%;
+			background-color: #800000;
+			
+		}
+
+.intro{
+	text-align: center;
+	margin-top:0px;
+	background-color: #E57373;
+	color:#FFEBEE;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+}
+
+.form{
+	background-color: #FFEBEE;
+			color: #800000;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 1px;
+			text-align: left;
+			text-decoration: none;
+			display: block;
+
+}
+
+
+.inline0{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.left{
+	height:400px;
+	background-color:#FFEBEE;
+	color:#800000;
+	float:left;
+	margin-right: 8px;
+	padding: 10px;
+}
+
+.right{
+	background-color:#FFEBEE;
+	color:#800000;
+	overflow: auto;
+	height:400px;
+	padding: 10px;
+	}
+
+.footer{
+	text-align: center;
+	height: 80px;
+}
+
+.tb{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #905050;
+	background-color: #FFEBEE;
+}
+
+
+
+.inline1{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.coleft{
+	height:300px;
+	background-color:#FFEBEE;
+	color:#800000;
+	float:left;
+	margin-right: 8px;
+	padding: 10px;
+}
+
+.coright{
+	background-color:#FFEBEE;
+	color:#800000;
+	overflow: auto;
+	height:300px;
+	padding: 10px;
+	}

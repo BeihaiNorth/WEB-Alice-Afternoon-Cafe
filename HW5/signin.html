@@ -4,27 +4,53 @@
 	<title>Sign In|Alice&rsquo;s Afternoon</title>
 	<link rel="stylesheet" type="text/css" href="layout.css">
 	<style>
-		div.mainMenu ul {
+		/*main menu css*/
+		div.mainMenu > ul {
 			list-style-type: none;
 			margin-top: 40px;
 			margin-left: 10px;
 		}
-		div.mainMenu ul li {
+
+		div.mainMenu>ul li {
 			float: left;
 			height: 10px;
 			margin-top:20px;
 			margin-right: 25px;
 			padding: 3px;
 		}
-		div.mainMenu ul li a {
+		div.mainMenu>ul li a {
 			text-decoration: none;
 			display: block;
 			color: white;
 		}
-		div.mainMenu ul li a:hover {
+		div.mainMenu>ul li a:hover {
 			background-color:#455A64;
 		}
 
+		/*sub menu css*/
+		div.mainMenu ul li ul {
+			position: absolute;
+			top:80px;
+			display: none;
+			text-align: left;
+			font-size: 12px;
+			background-color: #B22222;
+			padding-left: 5px;
+		}
+		div.mainMenu ul li ul li{
+			padding-left: 0px;
+			margin-right: 10px;
+			margin-left: 0px;
+			margin-top: 1px;
+			margin-bottom: 3px;
+	        display: block; 
+		}
+
+		div.mainMenu ul li:hover ul {
+			display: block; 
+		}
+		
+		/*signin and fb css*/
 		div.signIn ul {
 			list-style-type: none;
 			margin-top: 0px;
@@ -50,18 +76,6 @@
 		}
 	</style>
 		<script type="text/javascript">
-
-			$(document).ready(function(){
-				$(div.form form input.summit).click(function(){
-					var x = $(input.required);
-					for (var i = 0; i < x.length; i++) {
-							if(x[i].value===""){
-								alert("Field with * is required.");
-							}
-					}
-				});
-			});
-		
 		function validate_required(field,alerttxt)
 {
 with (field)
@@ -117,7 +131,13 @@ with (thisform)
 <div class="mainMenu">
 	<ul>
 		<li><a href="home.html">&spades;HOME</a></li>
-		<li><a href="taste.html">&spades;TASTE</a></li>
+		<li><a href="taste.html">&spades;TASTE</a>
+			<ul>
+				<li><a href="coffee.html">COFFEE</a></li>
+				<li><a href="tea.html">TEA</a></li>
+				<li><a href="dessert.html">DESSERT</a></li>
+			</ul>
+		</li>
 		<li><a href="events.html">&spades;EVENTS</a></li>
 		<li><a href="cooperation.html">&spades;COOPERATION</a></li>
 		<li><a href="community.html">&spades;COMMUNITY</a></li>
@@ -140,15 +160,14 @@ with (thisform)
 </div>
 
 <div class="form">
-	<form action="submitpage.html" method="post" onsubmit="return validate_form(this)">
-		First name*:<br><input type="text" class="required" name="firstname" size="30"><br>
-		Last name*:<br><input type="text" class="required" name="lastname" size="30"><br>
-		Address Line 1*:<br><input type="text" class="required" name="addressline1" size="80"><br>
+	<form action="submitpage.html" onsubmit="return validate_form(this)" method="post" >
+		First name:<br><input type="text" name="firstname" size="30"><br>
+		Last name:<br><input type="text" name="lastname" size="30"><br>
+		Address Line 1:<br><input type="text" name="addressline1" size="80"><br>
 		Address Line 2:<br><input type="text" name="addressline2" size="80"><br>
-		E-mail*:<br><input type="text" class="required" name="email" size="30"><br>
-		Phone*:<br><input type="text" class="required" name="phone" size="30"><br>
-		Comment*:<br><input type="text" class="required" name="comment" size="80"><br>
-		<input class="summit" type="submit" value="Submit"> 
+		E-mail:<br><input type="text" name="email" size="30"><br>
+		Phone:<br><input type="text" name="phone" size="30"><br>
+		<input type="submit" value="Sign In"> 
 
 	</form>
 </div>
@@ -162,6 +181,5 @@ with (thisform)
   <br/>Contact information: <a href="mailto:alicecoffee@gmail.com">alicecoffee@gmail.com</a>.</p>
 </footer>
 </div>
-s
 </body>
 </html>

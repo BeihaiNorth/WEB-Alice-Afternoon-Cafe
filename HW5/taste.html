@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASTE|Alice's Afternoon</title>
+		<link rel="stylesheet" type="text/css" href="layout.css">
+	<style>
+		/*main menu css*/
+		div.mainMenu > ul {
+			list-style-type: none;
+			margin-top: 40px;
+			margin-left: 10px;
+		}
+
+		div.mainMenu>ul li {
+			float: left;
+			height: 10px;
+			margin-top:20px;
+			margin-right: 25px;
+			padding: 3px;
+		}
+		div.mainMenu>ul li a {
+			text-decoration: none;
+			display: block;
+			color: white;
+		}
+		div.mainMenu>ul li a:hover {
+			background-color:#455A64;
+		}
+
+		/*sub menu css*/
+		div.mainMenu ul li ul {
+			position: absolute;
+			top:80px;
+			display: none;
+			text-align: left;
+			font-size: 12px;
+			background-color: #B22222;
+			padding-left: 5px;
+		}
+		div.mainMenu ul li ul li{
+			padding-left: 0px;
+			margin-right: 10px;
+			margin-left: 0px;
+			margin-top: 1px;
+			margin-bottom: 3px;
+	        display: block; 
+		}
+
+		div.mainMenu ul li:hover ul {
+			display: block; 
+		}
+		
+		/*signin and fb css*/
+		div.signIn ul {
+			list-style-type: none;
+			margin-top: 0px;
+			margin-left: 10px;
+			margin-right: 90px;
+			border-bottom: white;
+		}
+		div.signIn ul li {
+			float: right;
+			height: 10px;
+			margin-top:20px;
+			margin-right: 25px;
+			padding: 0px;
+		}
+		div.signIn ul li a {
+			text-decoration: none;
+			display: block;
+			color: white;
+			font-size: 12px;
+		}
+		div.signIn ul li a:hover {
+			background-color:#455A64;
+		}
+
+		.quicktag{
+			margin-top: 30px;
+			background-color: white;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			color: #800000;
+		}
+		.main{
+			width:100%;
+			height: 600px;
+			margin-top: 0px;
+			margin-bottom: 50px;
+			display: inline-block;
+			color: #800000;
+		}
+		.left1{
+			position: absolute;
+			background-color:#FFEBEE;
+			padding: 20px;
+			top:280px;
+			left: 0px;
+			width:270px;
+			height:540px;
+			margin-left: 10px;
+		}
+		.right1{
+			position: absolute;
+			background-color:#FFEBEE;
+			padding: 20px;
+			top: 280px;
+			right: 0px;
+			width:270px;
+			height:540px;
+			margin-right: 10px;
+		}
+		.center{
+			position:absolute;
+			background-color:#FFEBEE;
+			padding: 20px;
+			top:280px;
+			left:50%;
+			margin-left:-155px;
+ 	 		width:270px;
+  			height:540px;
+		}
+
+
+	@media only screen and (max-width: 768px) {
+	body {margin:0px;}
+	div.logo img {display: none;}
+	div.mainMenu{
+		left:0px;
+		font-size: 15px;
+		width: auto;
+		height: 50px;
+	}
+	div.mainMenu > ul{
+		margin:5px;
+		float: none;
+	}
+
+	div.signIn{
+		display: none;
+	}
+
+	div.main{
+		display: block;
+		padding: 10px;
+		width: auto;
+	}
+	div.left1{
+		height:400px;
+		float:none;
+		top:none;
+		width: auto;
+	}
+	div.left1 img{
+		width: 300px;
+	}
+
+	div.right1{
+		height:510px;
+		width: auto;
+		top:1130px;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+	div.right1 img{
+		width: 300px;
+	}
+	div.center{
+		height:350px;
+		width: auto;
+		top:730px;
+		left:0;
+		margin-left: 10px;
+	}
+	div.center img{
+		width: 300px;
+	}
+}
+	</style>
+</head>
+
+
+
+<body style="background-color:#FFCDD2">
+
+<div class="head">
+<div class="logo">
+	<a href="home.html">
+		<img src="images/title.jpg" alt="Error" width="180">
+	</a>
+</div>
+
+
+<div class="mainMenu">
+	<ul>
+		<li><a href="home.html">&spades;HOME</a></li>
+		<li><a href="taste.html">&spades;TASTE</a>
+			<ul>
+				<li><a href="coffee.html">COFFEE</a></li>
+				<li><a href="tea.html">TEA</a></li>
+				<li><a href="dessert.html">DESSERT</a></li>
+			</ul>
+		</li>	
+		<li><a href="events.html">&spades;EVENTS</a></li>
+		<li><a href="cooperation.html">&spades;COOPERATION</a></li>
+		<li><a href="community.html">&spades;COMMUNITY</a></li>
+	</ul>
+</div>
+
+<div class="signIn">
+	<ul>
+		<li><a href="signin.html">Sign In</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="intro">
+	<p>
+		<h2>Afternoon at Alice's Wonderland</h1>
+	
+	Here at Alice's Wonderland, we ensure you a pleasant piece of time!
+	<br/>Come and discover your own lovely afternoon with our magic!
+	</p>
+</div>
+
+
+
+
+
+<!-- three colume menu -->
+<div class="main">
+<!-- left -->
+<div class="left1">
+<h2 id="coffee">Coffee
+</br> 
+<a href="coffee.html"><img src="images/coffee1.jpeg" width="250"></a>
+</h2>
+<ul>
+	<li>American Coffee (h/c)</li>
+	<li>Espresso Macchiato Coffee (h/c)</li>
+	<li>Italian Cappuccino Coffee (h/c)</li>
+	<li>Double Chocolate Coffee</li>
+	<li>Coconut Coffee (h/c)</li>
+	<li>Vanilla Ice Cream coffee (c) </li>
+	<li>Ireland Coffee (c)</li>
+</ul>
+</div>
+<!-- center -->
+<div class="center">
+<h2 id="tea">Tea
+</br> <img src="images/tea.jpeg" width="250">
+</h2>
+<ul>
+	<li>English Lemmon Black Tea</li>
+	<li>Siri Lanka Black Tea</li>
+	<li>Chinese Green Tea</li>
+	<li>Fruit Tea</li>
+</ul>
+
+</div>
+
+<!-- right -->
+<div class="right1">
+<h2 id="dessert">Dessert
+</br> <img src="images/waffle.jpeg" width="250">
+
+</h2>
+<ul>
+ 	<li><b>Waffle</b>
+ 		<ul>
+ 		<li>with Honey</li>
+ 		<li>with Mocca Sauce and Vanilla Cream</li>
+ 		<li>with Ice Cream Balls in 3 Flavors</li>
+ 		</ul>
+ 	</li>
+ 		
+ 	<li><b>Baked Bread</b>
+    	<ul>
+    	<li>with Strayberry and Blueberry Jam</li>
+    	<li>with Chocolate Jam</li>
+    	</ul>
+    </li>
+    <li><b>Mousses</b>
+    	<ul>
+    	<li>Mango</li>
+    	<li>Fresh Lemon</li>
+    	<li>Amaretto</li>
+    	</ul>
+    </li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="footer">
+<footer style="color:grey">
+  <p>&copy;2016 Alice's Coffee
+  <a href="terms.html">Terms and Conditions</a>
+  <br/>Contact information: <a href="mailto:alicecoffee@gmail.com">alicecoffee@gmail.com</a>.</p>
+</footer>
+</div>
+
+
+</body>
+</html>
